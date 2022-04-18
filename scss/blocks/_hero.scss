@@ -1,0 +1,110 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.chess_board {
+  box-sizing: border-box;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.cards {
+  width: 536px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid #005b44;
+  background-color: #005b44;
+  justify-content: center;
+  transition: all 0.6s;
+}
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.rows:nth-child(odd) .card:nth-child(odd) {
+  background-color: #d5cabd;
+}
+.rows:nth-child(even) .card:nth-child(even) {
+  background-color: #d5cabd;
+}
+.card {
+  width: 67px;
+  height: 67px;
+  background-color: #005b44;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+}
+
+.eff_3d {
+  padding: 8px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.hoveredCard {
+  box-shadow: 0px 0px 31px 13px #ff2929 inset;
+
+  /* background-color: rgba(255, 0, 0, 0.73) !important; */
+}
+.hoveredCard1 {
+  box-shadow: 0px 0px 31px 13px #3596b5 inset;
+  /* background-color: rgba(255, 0, 0, 0.73) !important; */
+}
+
+.click3D {
+  transition: all 0.6s;
+  transform: perspective(300px) rotateX(21deg) rotateY(0deg) rotateZ(0deg)
+    scale(0.9) translateX(0px) translateY(-50px) translateZ(50px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.colorWhite {
+  background-color: #fff;
+}
+
+.qora-ot {
+  background: url('../../images/ot.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+}
+.qora-fil {
+  background: url('../../images/fil.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+}
+.qora-tora {
+  background: url('../../images/tora.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+}
+.qora-shoh {
+  background: url('../../images/shoh.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+}
+.qora-vazir {
+  background: url('../../images/vazir.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+}
+.qora-piyoda {
+  background: url('../../images/piyoda.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+}

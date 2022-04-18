@@ -1,0 +1,159 @@
+body {
+  background: #296073;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.chess_board {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards {
+  width: 536px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #005b44;
+  background-color: #005b44;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.rows:nth-child(odd) .card:nth-child(odd) {
+  background-color: #d5cabd;
+}
+
+.rows:nth-child(even) .card:nth-child(even) {
+  background-color: #d5cabd;
+}
+
+.card {
+  width: 67px;
+  height: 67px;
+  background-color: #005b44;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.eff_3d {
+  padding: 8px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.hoveredCard {
+  -webkit-box-shadow: 0px 0px 31px 13px #ff2929 inset;
+          box-shadow: 0px 0px 31px 13px #ff2929 inset;
+  /* background-color: rgba(255, 0, 0, 0.73) !important; */
+}
+
+.hoveredCard1 {
+  -webkit-box-shadow: 0px 0px 31px 13px #3596b5 inset;
+          box-shadow: 0px 0px 31px 13px #3596b5 inset;
+  /* background-color: rgba(255, 0, 0, 0.73) !important; */
+}
+
+.click3D {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-transform: perspective(300px) rotateX(21deg) rotateY(0deg) rotateZ(0deg) scale(0.9) translateX(0px) translateY(-50px) translateZ(50px);
+          transform: perspective(300px) rotateX(21deg) rotateY(0deg) rotateZ(0deg) scale(0.9) translateX(0px) translateY(-50px) translateZ(50px);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.colorWhite {
+  background-color: #fff;
+}
+
+.qora-ot {
+  background: url("../../images/ot.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+}
+
+.qora-fil {
+  background: url("../../images/fil.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+}
+
+.qora-tora {
+  background: url("../../images/tora.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+}
+
+.qora-shoh {
+  background: url("../../images/shoh.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+}
+
+.qora-vazir {
+  background: url("../../images/vazir.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+}
+
+.qora-piyoda {
+  background: url("../../images/piyoda.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+}
+/*# sourceMappingURL=style.css.map */
